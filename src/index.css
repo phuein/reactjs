@@ -1,0 +1,95 @@
+/* PC or large tablet */
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+  .content {
+    position: relative;
+    top: 25%;
+    width: 50%;
+  }
+}
+
+/* Phone Portrait */
+@media only screen and (orientation: portrait) and (max-width: 600px) and (max-height: 800px) {
+  .content {
+    position: relative;
+    top: 10%;
+    width: 50%;
+  }
+}
+
+/* Phone Landscape */
+@media only screen and (orientation: landscape) and (max-width: 600px) and (max-height: 400px) {
+  .content {
+    position: relative;
+    top: 10%;
+    width: 50%;
+  }
+}
+
+#container {
+  position: relative;
+}
+
+body {
+  background-color: #fffef9f5;
+  padding: 20px;
+  margin: 0;
+  color: rgb(26, 26, 26);
+
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.header {
+  background-color: rgb(51, 51, 51);
+  padding: 0;
+}
+
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+.content {
+  background-color: rgb(255, 255, 252);
+  padding: 20px;
+}
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+@keyframes fade {
+  from {
+    background-color: rgba(1,1,1,0);
+  }
+
+  to {
+    background-color: #0099FF;
+  }
+}
+
+.active {
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
